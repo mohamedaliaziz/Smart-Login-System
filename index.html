@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section id="signIn" class="  d-block">
+        <div class="container my-5 text-center ">
+            <div class="shdow m-auto w-75 p-5 ">
+                <h1>Smart Login System</h1>
+
+                <input id="signinEmail" class="form-control my-3" placeholder="Enter your email" type="text">
+
+                <input id="signinPassword" class="form-control my-3" placeholder="Enter your password" type="password">
+
+                <p id="incorrect"></p>
+
+                <button id="Login" class="btn btn-outline-info w-100 my-3">Login</button>
+                <p class="text-white">Don’t have an account? <a id="signUpp" class="text-white" href="#">Sign Up</a></p>
+
+            </div>
+        </div>
+    </section>
+    <section id="signUp" class="d-none">
+        <div class="container my-5 text-center">
+            <div class="shdow m-auto w-75 p-5">
+                <h1>Smart Login System</h1>
+
+                <input id="signupName" class="form-control my-3" placeholder="Enter your name" type="text">
+
+                <input id="signupEmail" class="form-control my-3" placeholder="Enter your email" type="email">
+
+                <input id="signupPassword" class="form-control my-3" placeholder="Enter  password" type="password">
+
+                <p id="exist"></p>
+
+                <button id="Sign" class=" btn btn-outline-info w-100 my-3">Sign
+                    Up</button>
+                <p class="text-white">You have an account? <a id="singInn" class="text-white" href="#">signIn</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="home" class="d-none">
+        <nav class="navbar navbar-expand-lg navbar-dark shdow">
+            <div class="container">
+                <a class="navbar-brand" href="#home">SMART LOGIN</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse collapse justify-content-end" id="navbarSupportedContent" style="">
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item mt-3">
+                            <a id="logOut" class="nav-link btn btn-outline-warning " href="#">Logout</a>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <div class="container my-5 text-center h-100 d-flex align-items-center">
+            <div class="shdow m-auto w-75 p-5">
+                <h1 id="username"></h1>
+            </div>
+        </div>
+    </section>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
